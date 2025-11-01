@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niko's Dark Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/social-links.js"></script>
+</head>
+<body class="bg-black text-gray-100 min-h-screen">
+    <custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-4 py-16 flex flex-col items-center justify-center min-h-[80vh]">
+        <div class="text-center space-y-8">
+            <h1 class="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-pulse">
+                Welcome to Niko!
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-2xl">
+                Welcome to my dark digital universe where creativity meets technology
+            </p>
+        </div>
+        
+        <div class="mt-16">
+            <custom-social-links></custom-social-links>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
